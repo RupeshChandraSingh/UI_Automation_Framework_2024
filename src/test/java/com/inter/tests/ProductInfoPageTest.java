@@ -19,8 +19,11 @@ public class ProductInfoPageTest extends BaseTest {
 	@DataProvider
 	public Object[][] getProductTestData() {
 
-		return new Object[][] { { "MacBook Pro", "MacBook Pro", 4 }, { "iMac", "iMac", 3 },
-				{ "Apple", "Apple Cinema 30\"", 6 }, { "Samsung", "Samsung Galaxy Tab 10.1", 7 } };
+		return new Object[][] { 
+			{ "MacBook Pro", "MacBook Pro", 4 },
+			{ "iMac", "iMac", 3 },
+			{ "Apple", "Apple Cinema 30\"", 6 },
+			{ "Samsung", "Samsung Galaxy Tab 10.1", 7 } };
 	}
 
 	@Test(dataProvider = "getProductTestData")
@@ -29,7 +32,6 @@ public class ProductInfoPageTest extends BaseTest {
 		searchPage = accountsPage.performSearch(searchKey);
 		productInfoPage = searchPage.selectProduct(productName);
 		int actualImageCount = productInfoPage.getProductImagesCount();
-		Assert.assertEquals(false, null);
 
 		Assert.assertEquals(actualImageCount, count);
 

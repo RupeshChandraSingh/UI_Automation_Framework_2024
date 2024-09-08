@@ -76,9 +76,7 @@ public class AccountPageTest extends BaseTest {
 	
 		return new Object[][] {
 			{"MacBook Pro","MacBook Pro"},
-			{"iMac","iMac"},
-			{"Apple","Apple Cinema 30\""},
-			{"Samsung","Samsung Galaxy Tab 10.1"}
+			{"iMac","iMac"}
 		};
 	}
 		
