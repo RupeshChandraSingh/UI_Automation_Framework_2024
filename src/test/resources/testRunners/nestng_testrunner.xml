@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="First Test Suite" thread-count="4"
+	parallel="tests" verbose="4">
+	
+	<listeners>
+		<listener
+			class-name="com.inter.listener.ExtentReportListener" />
+		<!--<listener
+			class-name="com.inter.listener.TestAllureListener" />-->
+
+		<listener
+			class-name="com.inter.listener.AnnotationTransformer" />
+	</listeners>
+
+
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.inter.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Account Page Test">
+		<classes>
+			<class name="com.inter.tests.AccountPageTest" />
+		</classes>
+	</test>
+
+	<test name="Product Page Test">
+		<classes>
+			<class name="com.inter.tests.ProductInfoPageTest" />
+		</classes>
+	</test>
+
+
+</suite>
