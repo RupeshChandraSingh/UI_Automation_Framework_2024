@@ -11,6 +11,8 @@ import com.inter.base.BaseTest;
 import com.inter.constants.AppConstants;
 import com.inter.pages.SearchPage;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class AccountPageTest extends BaseTest {
 
 	@BeforeClass
@@ -49,6 +51,7 @@ public class AccountPageTest extends BaseTest {
 	@Test
 	public void accPageHeadersValueTest() {
 		List<String> accountsPageHeaders = accountsPage.getAccountsPageHeadersList();
+		System.out.println(accountsPageHeaders);
 		
 		Assert.assertEquals(accountsPageHeaders,AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADERS_LIST);
 	}
