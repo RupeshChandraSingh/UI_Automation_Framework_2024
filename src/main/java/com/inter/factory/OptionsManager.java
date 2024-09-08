@@ -23,7 +23,7 @@ public class OptionsManager {
 		co.addArguments("--remote-allow-origins=*");
 
 		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
-			co.setBrowserVersion(prop.getProperty("browserversion"));
+//			co.setBrowserVersion(prop.getProperty("browserversion"));
 			co.setCapability("browsername", "chrome");
 			co.setCapability("enableVNC", true);
 			co.setCapability("name", prop.getProperty("testcasename"));

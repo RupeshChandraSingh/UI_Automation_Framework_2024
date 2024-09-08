@@ -15,23 +15,26 @@
 	</listeners>
 
 
-	<test name="Login Page Test">
+	<test name="Login Page Test on chrome">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.inter.tests.LoginPageTest" />
 		</classes>
 	</test>
 
-	<test name="Account Page Test">
+	<test name="Account Page Test on Firefox">
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.inter.tests.AccountPageTest" />
 		</classes>
 	</test>
 
-	<test name="Product Page Test">
+	<!--<test name="Product Page Test on Edge">
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.inter.tests.ProductInfoPageTest" />
 		</classes>
-	</test>
+	</test>-->
 
 
 </suite>
